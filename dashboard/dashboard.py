@@ -13,17 +13,6 @@ data = load_data()
 # Set page title
 st.title("Dashboard Streamlit Bike Sharing")
 
-# SIDEBAR
-st.sidebar.title("Information:")
-st.sidebar.markdown("**• Nama: Michael Bolang**")
-st.sidebar.markdown("**• Email: [michaelbolang9@gmail.com](michaelbolang9@gmail.com)**")
-
-st.sidebar.title("Dataset Bike Share")
-# Show the dataset
-if st.sidebar.checkbox("Show Dataset"):
-    st.subheader("Dataset")
-    st.write(data)
-
 # VISUALIZATION
 # ### Pertanyaan 1: Bagaimana statistik rental sepeda di tahun 2012?
 year_target = data.query('yr == 1')
